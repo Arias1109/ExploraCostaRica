@@ -287,6 +287,30 @@ footer p {
 
 
 /*--------------------------------
+    GALERIA
+--------------------------------*/
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.galeria img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.03);
+}
+
+
+/*--------------------------------
     RESPONSIVE TABLET
 --------------------------------*/
 
@@ -307,6 +331,10 @@ footer p {
     }
 
     .experiencia {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -371,5 +399,13 @@ footer p {
 
     .experiencia {
         grid-template-columns: 1fr;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria img {
+        height: 220px;
     }
 }
