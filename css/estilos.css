@@ -445,6 +445,30 @@ form button:hover {
 
 
 /*--------------------------------
+    ESTADISTICA
+--------------------------------*/
+
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #219ebc;
+    color: white;
+    text-align: center;
+    padding: 60px 8%;
+    gap: 20px;
+}
+
+.estadistica h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.estadistica p {
+    font-size: 18px;
+}
+
+
+/*--------------------------------
     RESPONSIVE TABLET
 --------------------------------*/
 
@@ -477,6 +501,10 @@ form button:hover {
     }
 
     .parques {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .estadisticas {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -556,6 +584,10 @@ form button:hover {
     }
 
     .parques {
+        grid-template-columns: 1fr;
+    }
+
+    .estadisticas {
         grid-template-columns: 1fr;
     }
 }
